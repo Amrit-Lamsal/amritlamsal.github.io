@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="amrit lamsal, lamsal, IT, tilottama, portfolio, amrit, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
+    <meta name="description" content="Amrit Lamsal is a Full-Stack developer with a strong background in Information Technology. He is passionate about enhancing his coding skills and crafting web applications and websites. He is dedicated to continuous self-improvement and enjoys creating Full-Stack clones." />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+   <!-- carousel Glide JS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css" integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+   <title>Portfolio | Amrit</title>
+</head>
+<body oncontextmenu="return false">
+<!-- navbar starts -->
+<header>
+        <a href="/" class="logo">Amrit</a> 
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+</header>
+<!-- navbar ends -->
+
+<!-- hero section starts -->
+
+ <section class="home" id="home">
+
+   <canvas id="canvas"></canvas>
+   <!-- <div class="icons">
+      <div class="home__social-container">
+        <div class="home__social">
+          <a href="https://github.com/Amrit-Lamsal" class="home__social-icon" target="_blank">
+            <i class="fab fa-github-alt"></i>
+          </a>
+          <a href="https://www.facebook.com/4mrit.lamsal" class="home__social-icon" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/amrit-lamsal-b112ab162/" class="home__social-icon" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://twitter.com/Amritlamsal400" class="home__social-icon" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+      </div> -->
+   <div class="content">
+   <h2>Hi There,<br/> I'm Amrit <span>Lamsal</span></h2>
+   <p>i am into <span class="typing-text"></span></p><br>
+   <a href="#about" class="btn"><span>About Me</span>
+     <i class="fas fa-arrow-circle-down"></i>
+   </a>
+   </div>
+<div class="image">
+   <img draggable="false" class="tilt" src="./assets/images/hero.png" alt="">
+</div>
+</section>
+
+ <!-- hero section ends  -->
+
+<!-- about section starts -->
+<section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+    
+    <div class="row">
+
+    <div class="image">
+        <img draggable="false" class="tilt" src="./assets/images/profile.jpg" alt="">
+    </div>
+    <div class="content">
+        <h3>I'm Amrit</h3>
+        <span class="tag">Full Stack Developer</span>
+      
+        <p>"Hello, I'm Amrit Lamsal, hailing from Tilottama-07 in Rupandehi, Nepal. 
+         I'm a Full-Stack developer with a strong background in Information Technology.
+          I hold a Bachelor of Computer Information Systems degree from Crimson College Of Technology | PU.
+           For my school education, I completed my +2 Level at Shree Gautam Buddha Secondary School. 
+           My passion lies in enhancing my coding skills and crafting web applications and websites.
+            I'm dedicated to continuous self-improvement and enjoy creating Full-Stack clones." </p>
+        
+        <div class="box-container">
+            <div class="box">
+              <p><span> email : </span> amritlamsal400@gmail.com</p>
+              <p><span> place : </span> Tilottama-07, Rupandehi, Nepal</p>
+            </div>
+        </div>
+        
+        <div class="resumebtn">
+            <a href="#home" class="btn"><span>Resume</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- about section ends -->
+
+<!-- skills section starts -->
+
+<section id="skills" class="section skills">
+  <div class="section-title">
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> My <span>Skills</span></h2>
+     <span class="subtitle">My technical level</span>
+  </div>
+  <div class="container">
+     <div class="skill-accordion">
+        <button class="skill-button">
+           <svg class="icon" width="29" height="33" viewBox="0 0 29 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Frontend icon</title>
+              <path d="M4 15.467c.77-.08 1.355-.312 1.756-.697.417-.384.625-.888.625-1.513 0-.576-.064-1.633-.192-3.17-.145-1.442-.217-2.595-.217-3.46 0-1.137.329-2.026.986-2.666C7.632 3.32 8.514 3 9.604 3h1.612v2.378h-1.058c-.514 0-.899.12-1.155.36-.24.225-.36.593-.36 1.105 0 .385.023.897.071 1.538.048.64.08 1.097.097 1.369.144 1.473.216 2.674.216 3.603 0 .817-.208 1.498-.625 2.042-.401.545-1.027.905-1.876 1.081v.048c.85.176 1.475.537 1.876 1.081.417.544.625 1.225.625 2.042 0 .929-.072 2.13-.216 3.603-.017.272-.049.729-.097 1.37-.048.64-.072 1.152-.072 1.537 0 .512.12.88.36 1.105.257.24.642.36 1.155.36h1.059V30H9.604c-1.09 0-1.972-.32-2.646-.96-.657-.641-.986-1.53-.986-2.667 0-.865.072-2.018.217-3.46.128-1.537.192-2.594.192-3.17 0-.625-.208-1.13-.625-1.513-.401-.385-.986-.617-1.756-.697v-2.066zM29 17.533c-.77.08-1.363.312-1.78.697-.4.384-.601.888-.601 1.513 0 .576.064 1.633.192 3.17.145 1.442.217 2.595.217 3.46 0 1.137-.337 2.026-1.01 2.666-.658.64-1.532.961-2.622.961h-1.612v-2.378h1.059c.513 0 .89-.12 1.13-.36.257-.225.385-.593.385-1.105 0-.385-.024-.897-.072-1.538a97.14 97.14 0 0 1-.097-1.369c-.144-1.473-.216-2.674-.216-3.603 0-.817.2-1.497.601-2.042.417-.544 1.05-.905 1.9-1.081v-.048c-.85-.176-1.483-.536-1.9-1.081-.4-.544-.601-1.225-.601-2.042 0-.929.072-2.13.216-3.603.017-.272.049-.729.097-1.37.048-.64.072-1.152.072-1.537 0-.512-.128-.88-.385-1.105-.24-.24-.617-.36-1.13-.36h-1.059V3h1.612c1.09 0 1.964.32 2.621.96.674.641 1.01 1.53 1.01 2.667 0 .865-.072 2.018-.216 3.46-.128 1.537-.192 2.594-.192 3.17 0 .625.2 1.13.601 1.514.417.384 1.01.616 1.78.696v2.066z" fill="#000000" />
+           </svg>
+           <div class="label">
+              <h3 class="title">Frontend developer</h3>
+              <span class="subtitle">More than 4 years</span>
+           </div>
+           <svg class="chevron" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Chevron button icon</title>
+              <path d="M.413 2.465 6.94 8.574c.141.135.31.242.495.315a1.595 1.595 0 0 0 1.17 0c.185-.073.353-.18.495-.315l6.45-6.11c.143-.133.256-.292.333-.468a1.376 1.376 0 0 0 0-1.108 1.438 1.438 0 0 0-.333-.469A1.566 1.566 0 0 0 14.477 0c-.401 0-.787.15-1.072.419l-5.385 5.1L2.634.42A1.596 1.596 0 0 0 .985.109a1.53 1.53 0 0 0-.496.31C.342.549.222.704.14.877a1.378 1.378 0 0 0 .274 1.588z" fill="#000000"/>
+           </svg>    
+        </button>
+        <div class="skill-content">
+           <ul class="skill-list">
+              <li class="skill-item">
+                 <div class="skill-title">
+                    <span class="name">HTML/CSS</span>
+                    <span class="value">90%</span>
+                 </div>
+                 <div class="skill-bar -htmlcss"></div>
+              </li>
+              <li class="skill-item">
+                 <div class="skill-title">
+                    <span class="name">Javascript</span>
+                    <span class="value">60%</span>
+                 </div>
+                 <div class="skill-bar -js"></div>
+              </li>
+              <li class="skill-item">
+                 <div class="skill-title">
+                    <span class="name">React</span>
+                    <span class="value">70%</span>
+                 </div>
+                 <div class="skill-bar -react"></div>
+              </li>
+              <li class="skill-item">
+                 <div class="skill-title">
+                    <span class="name">GatsbyJS</span>
+                    <span class="value">75%</span>
+                 </div>
+                 <div class="skill-bar -gatsby"></div>
+              </li>
+           </ul>
+        </div>
+     </div>
+     <div class="skill-accordion">
+        <button class="skill-button">
+           <svg class="icon" width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Backend icon</title>
+              <path d="M7.5 6.25a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5zM23.75 22.5h-7.725a3.75 3.75 0 0 0-2.275-2.275V17.5h5a3.75 3.75 0 0 0 3.75-3.75v-2.5a3.75 3.75 0 0 0-.975-2.5 3.75 3.75 0 0 0 .975-2.5v-2.5A3.75 3.75 0 0 0 18.75 0H6.25A3.75 3.75 0 0 0 2.5 3.75v2.5a3.75 3.75 0 0 0 .975 2.5 3.75 3.75 0 0 0-.975 2.5v2.5a3.75 3.75 0 0 0 3.75 3.75h5v2.725A3.75 3.75 0 0 0 8.975 22.5H1.25a1.25 1.25 0 0 0 0 2.5h7.725a3.75 3.75 0 0 0 7.05 0h7.725a1.25 1.25 0 0 0 0-2.5zM5 3.75A1.25 1.25 0 0 1 6.25 2.5h12.5A1.25 1.25 0 0 1 20 3.75v2.5a1.25 1.25 0 0 1-1.25 1.25H6.25A1.25 1.25 0 0 1 5 6.25v-2.5zM6.25 15A1.25 1.25 0 0 1 5 13.75v-2.5A1.25 1.25 0 0 1 6.25 10h12.5A1.25 1.25 0 0 1 20 11.25v2.5A1.25 1.25 0 0 1 18.75 15H6.25zm6.25 10a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm-5-13.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z" fill="#000000"/>
+           </svg>
+           <div class="label">
+              <h3 class="title">Backend developer</h3>
+              <span class="subtitle">More than 2 years</span>
+           </div>
+           <svg class="chevron" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Chevron button icon</title>
+              <path d="M.413 2.465 6.94 8.574c.141.135.31.242.495.315a1.595 1.595 0 0 0 1.17 0c.185-.073.353-.18.495-.315l6.45-6.11c.143-.133.256-.292.333-.468a1.376 1.376 0 0 0 0-1.108 1.438 1.438 0 0 0-.333-.469A1.566 1.566 0 0 0 14.477 0c-.401 0-.787.15-1.072.419l-5.385 5.1L2.634.42A1.596 1.596 0 0 0 .985.109a1.53 1.53 0 0 0-.496.31C.342.549.222.704.14.877a1.378 1.378 0 0 0 .274 1.588z" fill="#000000"/>
+           </svg>    
+        </button>
+        <div class="skill-content">
+           <ul class="skill-list">
+              <li class="skill-item">
+                 <div class="skill-title">
+                    <span class="name">NodeJS</span>
+                    <span class="value">60%</span>
+                 </div>
+                 <div class="skill-bar -node"></div>
+              </li>
+              <li class="skill-item">
+                 <div class="skill-title">
+                    <span class="name">PHP</span>
+                    <span class="value">50%</span>
+                 </div>
+                 <div class="skill-bar -php"></div>
+              </li>
+              <li class="skill-item">
+                 <div class="skill-title">
+                    <span class="name">MongoDB</span>
+                    <span class="value">70%</span>
+                 </div>
+                 <div class="skill-bar -mongo"></div>
+              </li>
+              <li class="skill-item">
+                 <div class="skill-title">
+                    <span class="name">Firebase</span>
+                    <span class="value">50%</span>
+                 </div>
+                 <div class="skill-bar -firebase"></div>
+              </li>
+           </ul>
+        </div>
+     </div>
+     <div class="skill-accordion">
+        <button class="skill-button">
+           <svg class="icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Designer icon</title>
+              <path d="M6.25 17.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5zm15.075-5 1.538-1.537a3.75 3.75 0 0 0 0-5.3l-3.538-3.526a3.75 3.75 0 0 0-5.3 0L12.5 3.676A3.75 3.75 0 0 0 8.75 0h-5A3.75 3.75 0 0 0 0 3.75v17.5A3.75 3.75 0 0 0 3.75 25h17.5A3.75 3.75 0 0 0 25 21.25v-5a3.75 3.75 0 0 0-3.675-3.75zM10 21.25a1.25 1.25 0 0 1-1.25 1.25h-5a1.25 1.25 0 0 1-1.25-1.25V3.75A1.25 1.25 0 0 1 3.75 2.5h5A1.25 1.25 0 0 1 10 3.75v17.5zM12.5 7.2l3.3-3.3a1.25 1.25 0 0 1 1.762 0L21.1 7.5a1.25 1.25 0 0 1 0 1.762l-3.6 3.6-5 4.938V7.2zm10 14.05a1.25 1.25 0 0 1-1.25 1.25h-8.975a3.9 3.9 0 0 0 .213-1.15l6.35-6.35h2.412a1.25 1.25 0 0 1 1.25 1.25v5z" fill="#000000"/>
+           </svg>
+           <div class="label">
+              <h3 class="title">Designer</h3>
+              <span class="subtitle">More than 5 years</span>
+           </div>
+           <svg class="chevron" width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Chevron button icon</title>
+              <path d="M.413 2.465 6.94 8.574c.141.135.31.242.495.315a1.595 1.595 0 0 0 1.17 0c.185-.073.353-.18.495-.315l6.45-6.11c.143-.133.256-.292.333-.468a1.376 1.376 0 0 0 0-1.108 1.438 1.438 0 0 0-.333-.469A1.566 1.566 0 0 0 14.477 0c-.401 0-.787.15-1.072.419l-5.385 5.1L2.634.42A1.596 1.596 0 0 0 .985.109a1.53 1.53 0 0 0-.496.31C.342.549.222.704.14.877a1.378 1.378 0 0 0 .274 1.588z" fill="#000000"/>
+           </svg>    
+        </button>
+        <div class="skill-content">
+           <ul class="skill-list">
+              <li class="skill-item">
+                 <div class="skill-title">
+                    <span class="name">Photoshop</span>
+                    <span class="value">80%</span>
+                 </div>
+                 <div class="skill-bar -photoshop"></div>
+              </li>
+              <li class="skill-item">
+                 <div class="skill-title">
+                    <span class="name">Illustrator</span>
+                    <span class="value">70%</span>
+                 </div>
+                 <div class="skill-bar -illustrator"></div>
+              </li>
+              <li class="skill-item">
+                 <div class="skill-title">
+                    <span class="name">Figma</span>
+                    <span class="value">80%</span>
+                 </div>
+                 <div class="skill-bar -figma"></div>
+              </li>
+              <li class="skill-item">
+                 <div class="skill-title">
+                    <span class="name">Sketch</span>
+                    <span class="value">55%</span>
+                 </div>
+                 <div class="skill-bar -sketch"></div>
+              </li>
+           </ul>
+        </div>
+     </div>
+  </div>
+</section>
+
+<!-- skills section ends -->
+
+<!-- education section starts -->
+<section class="education" id="education">
+
+  <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+
+    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+
+    <div class="box-container">
+
+    <div class="box">
+        <div class="image">
+        <img draggable="false" src="./assets/images/educat/colllege.png" alt="">
+        </div>
+        <div class="content">
+        <h3>Bachelor of Computer Information System </h3>
+        <p>Crimson College Of Technology | PU </p>
+        <h4>2018 | Ongoing</h4>
+        </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+      <img draggable="false" src="./assets/images/educat/school.png" alt="">
+      </div>
+      <div class="content">
+      <h3> School | +2 Level</h3>
+      <p>Shree Gautam Buddha Secondary School | </p>
+      <h4>2008 - 2013 | Completed</h4>
+      </div>
+    </div>
+
+</div>
+</section>
+<!-- education section ends -->
+
+<!-- work project section starts -->
+
+<section id="services" class="section services">
+  <div class="section-title">
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> My <span>Services</span></h2>
+     <span class="subtitle">What I offer</span>
+  </div>
+  <div class="container">
+     <div class="services-wrap">
+        <div class="service-card">
+           <svg class="card-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>UI/UX Designer icon</title>
+              <path d="M19 0H1a1 1 0 0 0-1 1v18a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm-7 18H2v-7h10v7zm0-9H2V2h10v7zm6 9h-4V2h4v16z" fill="#0069D1"/>
+           </svg>
+           <h3 class="card-title">UI/UX <br>Designer</h3>
+           <button class="card-button">
+              View more
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <title>Right Arrow</title>
+                 <path d="M11.925 5.62a1.002 1.002 0 0 0-.21-.33L6.713.294a1.005 1.005 0 0 0-1.42 1.419L8.592 5H1a1.001 1.001 0 0 0-1 1 .999.999 0 0 0 1 .998h7.594l-3.302 3.288a.999.999 0 0 0 0 1.418 1.001 1.001 0 0 0 1.42 0l5.003-4.995c.09-.095.162-.208.21-.33.1-.243.1-.516 0-.76z" fill="#000000"/>
+              </svg>
+           </button>
+           <div class="service-modal">
+              <div class="modal-content">
+                 <h4 class="title">UI/UX <br>Designer</h4>
+                 <button class="modal-close">
+                  <img src="./assets/images/menu-close.svg"  
+                         alt="Close icon"
+                         width="16" height="16">
+                 </button>
+                 <ul class="service-list">
+                    <li class="item">
+                       <svg class="icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <title>Check icon</title>
+                          <path d="m8.904 4.753-3.003 3.01-1.155-1.155a.7.7 0 1 0-.987.987l1.645 1.652a.7.7 0 0 0 .987 0l3.5-3.5a.7.7 0 1 0-.987-.994zM7 0a7 7 0 1 0 0 14A7 7 0 0 0 7 0zm0 12.6A5.6 5.6 0 1 1 7 1.401 5.6 5.6 0 0 1 7 12.6z" fill="#000000"/>
+                       </svg>
+                       I develop the user interface.
+                    </li>
+                    <li class="item">
+                       <svg class="icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <title>Check icon</title>
+                          <path d="m8.904 4.753-3.003 3.01-1.155-1.155a.7.7 0 1 0-.987.987l1.645 1.652a.7.7 0 0 0 .987 0l3.5-3.5a.7.7 0 1 0-.987-.994zM7 0a7 7 0 1 0 0 14A7 7 0 0 0 7 0zm0 12.6A5.6 5.6 0 1 1 7 1.401 5.6 5.6 0 0 1 7 12.6z" fill="#000000"/>
+                       </svg>
+                       Web page development.
+                    </li>
+                    <li class="item">
+                       <svg class="icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <title>Check icon</title>
+                          <path d="m8.904 4.753-3.003 3.01-1.155-1.155a.7.7 0 1 0-.987.987l1.645 1.652a.7.7 0 0 0 .987 0l3.5-3.5a.7.7 0 1 0-.987-.994zM7 0a7 7 0 1 0 0 14A7 7 0 0 0 7 0zm0 12.6A5.6 5.6 0 1 1 7 1.401 5.6 5.6 0 0 1 7 12.6z" fill="#000000"/>
+                       </svg>
+                       I create ux element interactions.
+                    </li>
+                    <li class="item">
+                       <svg class="icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <title>Check icon</title>
+                          <path d="m8.904 4.753-3.003 3.01-1.155-1.155a.7.7 0 1 0-.987.987l1.645 1.652a.7.7 0 0 0 .987 0l3.5-3.5a.7.7 0 1 0-.987-.994zM7 0a7 7 0 1 0 0 14A7 7 0 0 0 7 0zm0 12.6A5.6 5.6 0 1 1 7 1.401 5.6 5.6 0 0 1 7 12.6z" fill="#000000"/>
+                       </svg>
+                       I position your company brand.
+                    </li>
+                 </ul>
+              </div>
+           </div>
+        </div>
+        <div class="service-card">
+           <svg class="card-icon" width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Frontend developer icon</title>
+              <path d="M6.716.296a1 1 0 0 0-1.42 0l-5 5a1 1 0 0 0 0 1.42l5 5a1 1 0 0 0 1.639-.326 1 1 0 0 0-.22-1.094l-4.3-4.29 4.3-4.29a1 1 0 0 0 0-1.42zm11 5-5-5a1.003 1.003 0 1 0-1.42 1.42l4.3 4.29-4.3 4.29a1.002 1.002 0 0 0 .325 1.639 1 1 0 0 0 1.095-.22l5-5a1.001 1.001 0 0 0 0-1.42z" fill="#000000"/>
+           </svg>                
+           <h3 class="card-title">Frontend <br>Developer</h3>
+           <button class="card-button">
+              View more
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <title>Right Arrow</title>
+                 <path d="M11.925 5.62a1.002 1.002 0 0 0-.21-.33L6.713.294a1.005 1.005 0 0 0-1.42 1.419L8.592 5H1a1.001 1.001 0 0 0-1 1 .999.999 0 0 0 1 .998h7.594l-3.302 3.288a.999.999 0 0 0 0 1.418 1.001 1.001 0 0 0 1.42 0l5.003-4.995c.09-.095.162-.208.21-.33.1-.243.1-.516 0-.76z" fill="#000000"/>
+              </svg>
+           </button>
+           <div class="service-modal">
+              <div class="modal-content">
+                 <h4 class="title">Frontend <br>Developer</h4>
+                 <button class="modal-close">
+                  <img src="./assets/images/menu-close.svg"  
+                         alt="Close icon"
+                         width="16" height="16">
+                 </button>
+                 <ul class="service-list">
+                    <li class="item">
+                       <svg class="icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <title>Check icon</title>
+                          <path d="m8.904 4.753-3.003 3.01-1.155-1.155a.7.7 0 1 0-.987.987l1.645 1.652a.7.7 0 0 0 .987 0l3.5-3.5a.7.7 0 1 0-.987-.994zM7 0a7 7 0 1 0 0 14A7 7 0 0 0 7 0zm0 12.6A5.6 5.6 0 1 1 7 1.401 5.6 5.6 0 0 1 7 12.6z" fill="#000000"/>
+                       </svg>
+                       I develop the user interface.
+                    </li>
+                    <li class="item">
+                       <svg class="icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <title>Check icon</title>
+                          <path d="m8.904 4.753-3.003 3.01-1.155-1.155a.7.7 0 1 0-.987.987l1.645 1.652a.7.7 0 0 0 .987 0l3.5-3.5a.7.7 0 1 0-.987-.994zM7 0a7 7 0 1 0 0 14A7 7 0 0 0 7 0zm0 12.6A5.6 5.6 0 1 1 7 1.401 5.6 5.6 0 0 1 7 12.6z" fill="#000000"/>
+                       </svg>
+                       Web page development.
+                    </li>
+                    <li class="item">
+                       <svg class="icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <title>Check icon</title>
+                          <path d="m8.904 4.753-3.003 3.01-1.155-1.155a.7.7 0 1 0-.987.987l1.645 1.652a.7.7 0 0 0 .987 0l3.5-3.5a.7.7 0 1 0-.987-.994zM7 0a7 7 0 1 0 0 14A7 7 0 0 0 7 0zm0 12.6A5.6 5.6 0 1 1 7 1.401 5.6 5.6 0 0 1 7 12.6z" fill="#000000"/>
+                       </svg>
+                       I create ux element interactions.
+                    </li>
+                    <li class="item">
+                       <svg class="icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <title>Check icon</title>
+                          <path d="m8.904 4.753-3.003 3.01-1.155-1.155a.7.7 0 1 0-.987.987l1.645 1.652a.7.7 0 0 0 .987 0l3.5-3.5a.7.7 0 1 0-.987-.994zM7 0a7 7 0 1 0 0 14A7 7 0 0 0 7 0zm0 12.6A5.6 5.6 0 1 1 7 1.401 5.6 5.6 0 0 1 7 12.6z" fill="#000000"/>
+                       </svg>
+                       I position your company brand.
+                    </li>
+                 </ul>
+              </div>
+           </div>
+        </div>
+        <div class="service-card">
+           <svg class="card-icon" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Branding Designer icon</title>
+              <path d="M20 5.24a.999.999 0 0 0-.29-.71L15.47.29a.999.999 0 0 0-.71-.29 1 1 0 0 0-.71.29l-2.83 2.83L.29 14.05a1.001 1.001 0 0 0-.29.71V19a1 1 0 0 0 1 1h4.24a1.001 1.001 0 0 0 .76-.29L16.87 8.78 19.71 6c.091-.097.166-.208.22-.33.01-.08.01-.16 0-.24a.697.697 0 0 0 0-.14l.07-.05zM4.83 18H2v-2.83l9.93-9.93 2.83 2.83L4.83 18zM16.17 6.66l-2.83-2.83 1.42-1.41 2.82 2.82-1.41 1.42z" fill="#000000"/>
+           </svg>                
+           <h3 class="card-title">Branding <br>Designer</h3>
+           <button class="card-button">
+              View more
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <title>Right Arrow</title>
+                 <path d="M11.925 5.62a1.002 1.002 0 0 0-.21-.33L6.713.294a1.005 1.005 0 0 0-1.42 1.419L8.592 5H1a1.001 1.001 0 0 0-1 1 .999.999 0 0 0 1 .998h7.594l-3.302 3.288a.999.999 0 0 0 0 1.418 1.001 1.001 0 0 0 1.42 0l5.003-4.995c.09-.095.162-.208.21-.33.1-.243.1-.516 0-.76z" fill="#000000"/>
+              </svg>
+           </button>
+           <div class="service-modal">
+              <div class="modal-content">
+                 <h4 class="title">Branding <br>Designer</h4>
+                 <button class="modal-close">
+                    <img src="./assets/images/menu-close.svg" 
+                         alt="Close icon"
+                         width="16" height="16">
+                 </button>
+                 <ul class="service-list">
+                    <li class="item">
+                       <svg class="icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <title>Check icon</title>
+                          <path d="m8.904 4.753-3.003 3.01-1.155-1.155a.7.7 0 1 0-.987.987l1.645 1.652a.7.7 0 0 0 .987 0l3.5-3.5a.7.7 0 1 0-.987-.994zM7 0a7 7 0 1 0 0 14A7 7 0 0 0 7 0zm0 12.6A5.6 5.6 0 1 1 7 1.401 5.6 5.6 0 0 1 7 12.6z" fill="#000000"/>
+                       </svg>
+                       I develop the user interface.
+                    </li>
+                    <li class="item">
+                       <svg class="icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <title>Check icon</title>
+                          <path d="m8.904 4.753-3.003 3.01-1.155-1.155a.7.7 0 1 0-.987.987l1.645 1.652a.7.7 0 0 0 .987 0l3.5-3.5a.7.7 0 1 0-.987-.994zM7 0a7 7 0 1 0 0 14A7 7 0 0 0 7 0zm0 12.6A5.6 5.6 0 1 1 7 1.401 5.6 5.6 0 0 1 7 12.6z" fill="#000000"/>
+                       </svg>
+                       Web page development.
+                    </li>
+                    <li class="item">
+                       <svg class="icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <title>Check icon</title>
+                          <path d="m8.904 4.753-3.003 3.01-1.155-1.155a.7.7 0 1 0-.987.987l1.645 1.652a.7.7 0 0 0 .987 0l3.5-3.5a.7.7 0 1 0-.987-.994zM7 0a7 7 0 1 0 0 14A7 7 0 0 0 7 0zm0 12.6A5.6 5.6 0 1 1 7 1.401 5.6 5.6 0 0 1 7 12.6z" fill="#000000"/>
+                       </svg>
+                       I create ux element interactions.
+                    </li>
+                    <li class="item">
+                       <svg class="icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <title>Check icon</title>
+                          <path d="m8.904 4.753-3.003 3.01-1.155-1.155a.7.7 0 1 0-.987.987l1.645 1.652a.7.7 0 0 0 .987 0l3.5-3.5a.7.7 0 1 0-.987-.994zM7 0a7 7 0 1 0 0 14A7 7 0 0 0 7 0zm0 12.6A5.6 5.6 0 1 1 7 1.401 5.6 5.6 0 0 1 7 12.6z" fill="#000000"/>
+                       </svg>
+                       I position your company brand.
+                    </li>
+                 </ul>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+</section>
+<!-- End Service Section -->  
+
+<!-- Portfolio section starts -->
+<section id="portfolio" class="section portfolio">
+  <div class="section-title">
+    <h2 class="heading"><i class="fas fa-briefcase"></i> My <span>Portfolio</span></h2>
+     <span class="subtitle">Most recent work</span>
+  </div>
+  <div class="container">
+     <div class="glide portfolio-carousel">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <picture>
+                 <source type="image/webp" srcset="./assets/images/projects/portfolio1.webp">
+                 <source type="image/jpg" srcset="./assets/images/projects/portfolio1.jpg">
+                 <img src="./assets/images/projects/portfolio1.jpg" 
+                      alt="Modern Website photo"
+                      width="640" height="426">
+              </picture>
+              <div class="portfolio-content">
+                 <h3 class="title">Modern Website</h3>
+                 <p class="description">Website adaptable to all devices,
+                    with ui components and animated interactions.</p>
+                 <a href="#home" class="calltoaction">
+                    Demo
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <title>Right Arrow</title>
+                       <path d="M11.925 5.62a1.002 1.002 0 0 0-.21-.33L6.713.294a1.005 1.005 0 0 0-1.42 1.419L8.592 5H1a1.001 1.001 0 0 0-1 1 .999.999 0 0 0 1 .998h7.594l-3.302 3.288a.999.999 0 0 0 0 1.418 1.001 1.001 0 0 0 1.42 0l5.003-4.995c.09-.095.162-.208.21-.33.1-.243.1-.516 0-.76z" fill="#FFF"/>
+                    </svg>
+                 </a>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <picture>
+                 <source type="image/webp" srcset="./assets/images/projects/portfolio2.webp">
+                 <source type="image/jpg" srcset="./assets/images/projects/portfolio2.jpg">
+                 <img src="./assets/images/projects/portfolio2.jpg" 
+                      alt="Branding Design photo"
+                      width="640" height="426">
+              </picture>
+              <div class="portfolio-content">
+                 <h3 class="title">Branding Design</h3>
+                 <p class="description">Website adaptable to all devices,
+                    with ui components and animated interactions.</p>
+                 <a href="#home" class="calltoaction">
+                    Demo
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <title>Right Arrow</title>
+                       <path d="M11.925 5.62a1.002 1.002 0 0 0-.21-.33L6.713.294a1.005 1.005 0 0 0-1.42 1.419L8.592 5H1a1.001 1.001 0 0 0-1 1 .999.999 0 0 0 1 .998h7.594l-3.302 3.288a.999.999 0 0 0 0 1.418 1.001 1.001 0 0 0 1.42 0l5.003-4.995c.09-.095.162-.208.21-.33.1-.243.1-.516 0-.76z" fill="#FFF"/>
+                    </svg>
+                 </a>
+              </div>
+            </li>
+            <li class="glide__slide">
+              <picture>
+                 <source type="image/webp" srcset="./assets/images/projects/portfolio3.webp">
+                 <source type="image/jpg" srcset="./assets/images/projects/portfolio3.jpg">
+                 <img src="./assets/images/projects/portfolio3.jpg" 
+                      alt="Online Store photo"
+                      width="640" height="426">
+              </picture>
+              <div class="portfolio-content">
+                 <h3 class="title">Online Store</h3>
+                 <p class="description">Website adaptable to all devices,
+                    with ui components and animated interactions.</p>
+                 <a href="#home" class="calltoaction">
+                    Demo
+                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <title>Right Arrow</title>
+                       <path d="M11.925 5.62a1.002 1.002 0 0 0-.21-.33L6.713.294a1.005 1.005 0 0 0-1.42 1.419L8.592 5H1a1.001 1.001 0 0 0-1 1 .999.999 0 0 0 1 .998h7.594l-3.302 3.288a.999.999 0 0 0 0 1.418 1.001 1.001 0 0 0 1.42 0l5.003-4.995c.09-.095.162-.208.21-.33.1-.243.1-.516 0-.76z" fill="#FFF"/>
+                    </svg>
+                 </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+           <svg class="glide__arrow glide__arrow--left"
+                data-glide-dir=">" width="12" height="20" 
+                viewBox="0 0 12 20" fill="none" 
+                xmlns="http://www.w3.org/2000/svg">
+              <title>Arrow left icon</title>
+              <path d="m.485 11.103 8.519 8.454a1.505 1.505 0 0 0 1.069.443 1.513 1.513 0 0 0 1.068-.443 1.492 1.492 0 0 0 0-2.11l-7.45-7.481 7.45-7.407a1.492 1.492 0 0 0 0-2.11A1.506 1.506 0 0 0 10.073 0a1.513 1.513 0 0 0-1.07.449L.486 8.903a1.497 1.497 0 0 0-.485 1.1 1.489 1.489 0 0 0 .485 1.1z" fill="#9200d1"/>
+           </svg>
+           <svg class="glide__arrow glide__arrow--right"
+                data-glide-dir=">"width="12" height="20" 
+                viewBox="0 0 12 20" fill="none" 
+                xmlns="http://www.w3.org/2000/svg">
+              <title>Arrow right icon</title>
+              <path d="M11.094 8.897 2.575.443A1.506 1.506 0 0 0 .928.115 1.506 1.506 0 0 0 0 1.498c0 .395.157.774.438 1.054l7.45 7.482-7.45 7.407a1.492 1.492 0 0 0 0 2.11 1.504 1.504 0 0 0 1.648.331c.183-.077.35-.19.49-.33l8.518-8.455a1.496 1.496 0 0 0 .359-1.7 1.496 1.496 0 0 0-.359-.5z" fill="#9200d1"/>
+           </svg>
+        </div>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+           <button class="glide__bullet" data-glide-dir="=0">
+              Slide 1
+           </button>
+           <button class="glide__bullet" data-glide-dir="=1">
+              Slide 2
+           </button>
+           <button class="glide__bullet" data-glide-dir="=2">
+              Slide 3
+           </button>
+        </div>
+     </div>
+  </div>
+</section>
+<!-- experience section ends -->
+
+<!-- Testimonial -->
+<section class="section testimonial">
+  <div class="section-title">
+    <h2 class="heading"><i class="fas fa-check-circle"></i> <span>Testimonial</span>
+
+    </i></h2>
+     <span class="subtitle">My client saying</span>
+  </div>
+  <div class="container">
+     <div class="glide testimonial-carousel">
+        <div class="glide__track" data-glide-el="track">
+           <ul class="glide__slides">
+              <li class="glide__slide">
+                 <div class="slide-header">
+                    <div class="slide-client">
+                       <picture>
+                          <source type="image/webp" srcset="./assets/images/testimonial1.webp">
+                          <source type="image/jpg" srcset="./assets/images/testimonial1.jpg">
+                          <img src="./assets/images/testimonial1.jpg" 
+                               alt="Sushant Neupane"
+                               width="128" height="128">
+                       </picture>
+                       <div class="slide-name">
+                          <span class="name">Sushant Neupane</span>
+                          <span class="position">Client</span>
+                       </div>
+                    </div>
+                    <div class="stars">
+                     <svg width="14" height="13" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.976 4.888a.677.677 0 0 0-.23-.312.713.713 0 0 0-.37-.14l-3.978-.561L7.615.38a.684.684 0 0 0-.258-.278.717.717 0 0 0-.742 0 .684.684 0 0 0-.258.278L4.574 3.868l-3.977.568a.71.71 0 0 0-.351.151.675.675 0 0 0-.216.308.654.654 0 0 0 .175.676l2.887 2.703-.699 3.838a.655.655 0 0 0 .038.378.68.68 0 0 0 .242.298.714.714 0 0 0 .734.047l3.579-1.804 3.565 1.811a.668.668 0 0 0 .322.081.716.716 0 0 0 .412-.128.68.68 0 0 0 .242-.299c.05-.12.063-.25.038-.377l-.7-3.838 2.888-2.703a.674.674 0 0 0 .215-.314.654.654 0 0 0 .008-.376" fill="#FFD700"/>
+                     </svg>
+                     <svg width="14" height="13" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.976 4.888a.677.677 0 0 0-.23-.312.713.713 0 0 0-.37-.14l-3.978-.561L7.615.38a.684.684 0 0 0-.258-.278.717.717 0 0 0-.742 0 .684.684 0 0 0-.258.278L4.574 3.868l-3.977.568a.71.71 0 0 0-.351.151.675.675 0 0 0-.216.308.654.654 0 0 0 .175.676l2.887 2.703-.699 3.838a.655.655 0 0 0 .038.378.68.68 0 0 0 .242.298.714.714 0 0 0 .734.047l3.579-1.804 3.565 1.811a.668.668 0 0 0 .322.081.716.716 0 0 0 .412-.128.68.68 0 0 0 .242-.299c.05-.12.063-.25.038-.377l-.7-3.838 2.888-2.703a.674.674 0 0 0 .215-.314.654.654 0 0 0 .008-.376" fill="#FFD700"/>
+                     </svg>
+                     <svg width="14" height="13" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.976 4.888a.677.677 0 0 0-.23-.312.713.713 0 0 0-.37-.14l-3.978-.561L7.615.38a.684.684 0 0 0-.258-.278.717.717 0 0 0-.742 0 .684.684 0 0 0-.258.278L4.574 3.868l-3.977.568a.71.71 0 0 0-.351.151.675.675 0 0 0-.216.308.654.654 0 0 0 .175.676l2.887 2.703-.699 3.838a.655.655 0 0 0 .038.378.68.68 0 0 0 .242.298.714.714 0 0 0 .734.047l3.579-1.804 3.565 1.811a.668.668 0 0 0 .322.081.716.716 0 0 0 .412-.128.68.68 0 0 0 .242-.299c.05-.12.063-.25.038-.377l-.7-3.838 2.888-2.703a.674.674 0 0 0 .215-.314.654.654 0 0 0 .008-.376" fill="#FFD700"/>
+                     </svg>
+                     <svg width="14" height="13" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.976 4.888a.677.677 0 0 0-.23-.312.713.713 0 0 0-.37-.14l-3.978-.561L7.615.38a.684.684 0 0 0-.258-.278.717.717 0 0 0-.742 0 .684.684 0 0 0-.258.278L4.574 3.868l-3.977.568a.71.71 0 0 0-.351.151.675.675 0 0 0-.216.308.654.654 0 0 0 .175.676l2.887 2.703-.699 3.838a.655.655 0 0 0 .038.378.68.68 0 0 0 .242.298.714.714 0 0 0 .734.047l3.579-1.804 3.565 1.811a.668.668 0 0 0 .322.081.716.716 0 0 0 .412-.128.68.68 0 0 0 .242-.299c.05-.12.063-.25.038-.377l-.7-3.838 2.888-2.703a.674.674 0 0 0 .215-.314.654.654 0 0 0 .008-.376" fill="#FFD700"/>
+                     </svg>
+                     <svg width="14" height="13" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.976 4.888a.677.677 0 0 0-.23-.312.713.713 0 0 0-.37-.14l-3.978-.561L7.615.38a.684.684 0 0 0-.258-.278.717.717 0 0 0-.742 0 .684.684 0 0 0-.258.278L4.574 3.868l-3.977.568a.71.71 0 0 0-.351.151.675.675 0 0 0-.216.308.654.654 0 0 0 .175.676l2.887 2.703-.699 3.838a.655.655 0 0 0 .038.378.68.68 0 0 0 .242.298.714.714 0 0 0 .734.047l3.579-1.804 3.565 1.811a.668.668 0 0 0 .322.081.716.716 0 0 0 .412-.128.68.68 0 0 0 .242-.299c.05-.12.063-.25.038-.377l-.7-3.838 2.888-2.703a.674.674 0 0 0 .215-.314.654.654 0 0 0 .008-.376" fill="#FFD700"/>
+                     </svg>
+                    </div>
+                 </div>
+                 <p class="slide-description">I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.</p>
+              </li>
+              <li class="glide__slide">
+                 <div class="slide-header">
+                    <div class="slide-client">
+                       <picture>
+                          <source type="image/webp" srcset="./assets/images/testimonial2.webp">
+                          <source type="image/jpg" srcset="./assets/images/testimonial2.jpg">
+                          <img src="./assets/images/testimonial2.jpg" 
+                               alt="photo Matt Robinson"
+                               width="128" height="128">
+                       </picture>
+                       <div class="slide-name">
+                          <span class="name">Mohan Neupane</span>
+                          <span class="position">Client</span>
+                       </div>
+                    </div>
+                    <div class="stars">
+                     <svg width="14" height="13" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.976 4.888a.677.677 0 0 0-.23-.312.713.713 0 0 0-.37-.14l-3.978-.561L7.615.38a.684.684 0 0 0-.258-.278.717.717 0 0 0-.742 0 .684.684 0 0 0-.258.278L4.574 3.868l-3.977.568a.71.71 0 0 0-.351.151.675.675 0 0 0-.216.308.654.654 0 0 0 .175.676l2.887 2.703-.699 3.838a.655.655 0 0 0 .038.378.68.68 0 0 0 .242.298.714.714 0 0 0 .734.047l3.579-1.804 3.565 1.811a.668.668 0 0 0 .322.081.716.716 0 0 0 .412-.128.68.68 0 0 0 .242-.299c.05-.12.063-.25.038-.377l-.7-3.838 2.888-2.703a.674.674 0 0 0 .215-.314.654.654 0 0 0 .008-.376" fill="#FFD700"/>
+                     </svg>
+                     <svg width="14" height="13" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.976 4.888a.677.677 0 0 0-.23-.312.713.713 0 0 0-.37-.14l-3.978-.561L7.615.38a.684.684 0 0 0-.258-.278.717.717 0 0 0-.742 0 .684.684 0 0 0-.258.278L4.574 3.868l-3.977.568a.71.71 0 0 0-.351.151.675.675 0 0 0-.216.308.654.654 0 0 0 .175.676l2.887 2.703-.699 3.838a.655.655 0 0 0 .038.378.68.68 0 0 0 .242.298.714.714 0 0 0 .734.047l3.579-1.804 3.565 1.811a.668.668 0 0 0 .322.081.716.716 0 0 0 .412-.128.68.68 0 0 0 .242-.299c.05-.12.063-.25.038-.377l-.7-3.838 2.888-2.703a.674.674 0 0 0 .215-.314.654.654 0 0 0 .008-.376" fill="#FFD700"/>
+                     </svg>
+                     <svg width="14" height="13" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.976 4.888a.677.677 0 0 0-.23-.312.713.713 0 0 0-.37-.14l-3.978-.561L7.615.38a.684.684 0 0 0-.258-.278.717.717 0 0 0-.742 0 .684.684 0 0 0-.258.278L4.574 3.868l-3.977.568a.71.71 0 0 0-.351.151.675.675 0 0 0-.216.308.654.654 0 0 0 .175.676l2.887 2.703-.699 3.838a.655.655 0 0 0 .038.378.68.68 0 0 0 .242.298.714.714 0 0 0 .734.047l3.579-1.804 3.565 1.811a.668.668 0 0 0 .322.081.716.716 0 0 0 .412-.128.68.68 0 0 0 .242-.299c.05-.12.063-.25.038-.377l-.7-3.838 2.888-2.703a.674.674 0 0 0 .215-.314.654.654 0 0 0 .008-.376" fill="#FFD700"/>
+                     </svg>
+                     <svg width="14" height="13" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.976 4.888a.677.677 0 0 0-.23-.312.713.713 0 0 0-.37-.14l-3.978-.561L7.615.38a.684.684 0 0 0-.258-.278.717.717 0 0 0-.742 0 .684.684 0 0 0-.258.278L4.574 3.868l-3.977.568a.71.71 0 0 0-.351.151.675.675 0 0 0-.216.308.654.654 0 0 0 .175.676l2.887 2.703-.699 3.838a.655.655 0 0 0 .038.378.68.68 0 0 0 .242.298.714.714 0 0 0 .734.047l3.579-1.804 3.565 1.811a.668.668 0 0 0 .322.081.716.716 0 0 0 .412-.128.68.68 0 0 0 .242-.299c.05-.12.063-.25.038-.377l-.7-3.838 2.888-2.703a.674.674 0 0 0 .215-.314.654.654 0 0 0 .008-.376" fill="#FFD700"/>
+                     </svg>
+                     <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.976 4.888a.677.677 0 0 0-.23-.312.713.713 0 0 0-.37-.14l-3.978-.561L7.615.38a.684.684 0 0 0-.258-.278.717.717 0 0 0-.742 0 .684.684 0 0 0-.258.278L4.574 3.868l-3.977.568a.71.71 0 0 0-.351.151.675.675 0 0 0-.216.308.654.654 0 0 0 .175.676l2.887 2.703-.699 3.838a.655.655 0 0 0 .038.378.68.68 0 0 0 .242.298.714.714 0 0 0 .734.047l3.579-1.804 3.565 1.811a.668.668 0 0 0 .322.081.716.716 0 0 0 .412-.128.68.68 0 0 0 .242-.299c.05-.12.063-.25.038-.377l-.7-3.838 2.888-2.703a.674.674 0 0 0 .215-.314.654.654 0 0 0 .008-.376zM9.677 7.591a.654.654 0 0 0-.203.601l.504 2.832L7.35 9.673a.718.718 0 0 0-.658 0l-2.628 1.351.503-2.831a.654.654 0 0 0-.202-.602L2.267 5.564l2.943-.412a.713.713 0 0 0 .314-.122.682.682 0 0 0 .218-.25l1.244-2.574L8.3 4.787c.05.1.125.185.218.25s.2.107.314.122l2.942.412-2.097 2.02z" fill="#000000"/>
+                     </svg>
+                  </div>
+                  
+                 </div>
+                 <p class="slide-description">I am very happy with the quality of work and the results I achieved.I would highly recommend the team and their services to others.</p>
+              </li>
+              <li class="glide__slide">
+                 <div class="slide-header">
+                    <div class="slide-client">
+                       <picture>
+                          <source type="image/webp" srcset="./assets/images/testimonial3.webp">
+                          <source type="image/jpg" srcset="./assets/images/testimonial3.jpg">
+                          <img src="./assets/images/testimonial3.jpg" 
+                               alt="photo Raul Harris"
+                               width="128" height="128">
+                       </picture>
+                       <div class="slide-name">
+                          <span class="name">Pankaj Bashyal</span>
+                          <span class="position">Client</span>
+                       </div>
+                    </div>
+                    <div class="stars">
+                     <svg width="14" height="13" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.976 4.888a.677.677 0 0 0-.23-.312.713.713 0 0 0-.37-.14l-3.978-.561L7.615.38a.684.684 0 0 0-.258-.278.717.717 0 0 0-.742 0 .684.684 0 0 0-.258.278L4.574 3.868l-3.977.568a.71.71 0 0 0-.351.151.675.675 0 0 0-.216.308.654.654 0 0 0 .175.676l2.887 2.703-.699 3.838a.655.655 0 0 0 .038.378.68.68 0 0 0 .242.298.714.714 0 0 0 .734.047l3.579-1.804 3.565 1.811a.668.668 0 0 0 .322.081.716.716 0 0 0 .412-.128.68.68 0 0 0 .242-.299c.05-.12.063-.25.038-.377l-.7-3.838 2.888-2.703a.674.674 0 0 0 .215-.314.654.654 0 0 0 .008-.376" fill="#FFD700"/>
+                     </svg>
+                     <svg width="14" height="13" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.976 4.888a.677.677 0 0 0-.23-.312.713.713 0 0 0-.37-.14l-3.978-.561L7.615.38a.684.684 0 0 0-.258-.278.717.717 0 0 0-.742 0 .684.684 0 0 0-.258.278L4.574 3.868l-3.977.568a.71.71 0 0 0-.351.151.675.675 0 0 0-.216.308.654.654 0 0 0 .175.676l2.887 2.703-.699 3.838a.655.655 0 0 0 .038.378.68.68 0 0 0 .242.298.714.714 0 0 0 .734.047l3.579-1.804 3.565 1.811a.668.668 0 0 0 .322.081.716.716 0 0 0 .412-.128.68.68 0 0 0 .242-.299c.05-.12.063-.25.038-.377l-.7-3.838 2.888-2.703a.674.674 0 0 0 .215-.314.654.654 0 0 0 .008-.376" fill="#FFD700"/>
+                     </svg>
+                     <svg width="14" height="13" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.976 4.888a.677.677 0 0 0-.23-.312.713.713 0 0 0-.37-.14l-3.978-.561L7.615.38a.684.684 0 0 0-.258-.278.717.717 0 0 0-.742 0 .684.684 0 0 0-.258.278L4.574 3.868l-3.977.568a.71.71 0 0 0-.351.151.675.675 0 0 0-.216.308.654.654 0 0 0 .175.676l2.887 2.703-.699 3.838a.655.655 0 0 0 .038.378.68.68 0 0 0 .242.298.714.714 0 0 0 .734.047l3.579-1.804 3.565 1.811a.668.668 0 0 0 .322.081.716.716 0 0 0 .412-.128.68.68 0 0 0 .242-.299c.05-.12.063-.25.038-.377l-.7-3.838 2.888-2.703a.674.674 0 0 0 .215-.314.654.654 0 0 0 .008-.376" fill="#FFD700"/>
+                     </svg>
+                     <svg width="14" height="13" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.976 4.888a.677.677 0 0 0-.23-.312.713.713 0 0 0-.37-.14l-3.978-.561L7.615.38a.684.684 0 0 0-.258-.278.717.717 0 0 0-.742 0 .684.684 0 0 0-.258.278L4.574 3.868l-3.977.568a.71.71 0 0 0-.351.151.675.675 0 0 0-.216.308.654.654 0 0 0 .175.676l2.887 2.703-.699 3.838a.655.655 0 0 0 .038.378.68.68 0 0 0 .242.298.714.714 0 0 0 .734.047l3.579-1.804 3.565 1.811a.668.668 0 0 0 .322.081.716.716 0 0 0 .412-.128.68.68 0 0 0 .242-.299c.05-.12.063-.25.038-.377l-.7-3.838 2.888-2.703a.674.674 0 0 0 .215-.314.654.654 0 0 0 .008-.376" fill="#FFD700"/>
+                     </svg>
+                     <svg width="14" height="13" viewBox="0 0 14 13" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.976 4.888a.677.677 0 0 0-.23-.312.713.713 0 0 0-.37-.14l-3.978-.561L7.615.38a.684.684 0 0 0-.258-.278.717.717 0 0 0-.742 0 .684.684 0 0 0-.258.278L4.574 3.868l-3.977.568a.71.71 0 0 0-.351.151.675.675 0 0 0-.216.308.654.654 0 0 0 .175.676l2.887 2.703-.699 3.838a.655.655 0 0 0 .038.378.68.68 0 0 0 .242.298.714.714 0 0 0 .734.047l3.579-1.804 3.565 1.811a.668.668 0 0 0 .322.081.716.716 0 0 0 .412-.128.68.68 0 0 0 .242-.299c.05-.12.063-.25.038-.377l-.7-3.838 2.888-2.703a.674.674 0 0 0 .215-.314.654.654 0 0 0 .008-.376" fill="#FFD700"/>
+                     </svg>
+                    </div>
+                 </div>
+                 <p class="slide-description">I'm extremely satisfied with the quality of work and the 24/7 support I received from my recent project.</p>
+              </li>
+           </ul>
+        </div>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+           <button class="glide__bullet" data-glide-dir="=0">Slide 1</button>
+           <button class="glide__bullet" data-glide-dir="=1">Slide 2</button>
+           <button class="glide__bullet" data-glide-dir="=2">Slide 3</button>
+        </div>
+     </div>
+  </div>
+</section>
+<!-- Testimonial -->
+
+<!-- contact section starts -->
+<section class="contact" id="contact">
+  
+  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+         <img draggable="false" src="./assets/images/contact1.png" alt="">
+      </div>
+    <form id="contact-form">
+      
+      <div class="form-group">
+        <div class="field">
+          <input type="text" id="name" name="name" placeholder="Name" required>
+          <i class='fas fa-user'></i>
+        </div>
+        <div class="field">
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <i class='fas fa-envelope'></i>
+        </div>
+        <div class="field">
+          <input type="value" id="phone" name="phone" placeholder="Phone">
+          <i class='fas fa-phone-alt'></i>
+        </div>
+        <div class="message">
+        <textarea placeholder="Message" id="message" name="message" required></textarea>
+        <i class="fas fa-comment-dots"></i>
+        </div>
+        </div>
+      <div class="button-area">
+        <button type="submit" id="submit" >
+          Submit <i class="fa fa-paper-plane"></i></button>
+      </div>
+    </form>
+  </div>
+  </div>
+</section>
+<!-- contact section ends -->
+
+<!-- footer section starts -->
+<section class="footer">
+  <div class="box-container">
+      <div class="box">
+          <h3>Amrit's Portfolio</h3>
+          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
+      </div>
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+          <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+          <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+      </div>
+      <div class="box">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-phone"></i>+91 XXX-XXX-XXXX</p>
+          <p> <i class="fas fa-envelope"></i>amritlamsal400@gmail.com</p>
+          <p> <i class="fas fa-map-marked-alt"></i>Tilottama-07, Rupandehi Nepal</p>
+          <div class="share">
+              <a href="https://www.linkedin.com/in/amrit-lamsal-b112ab162/" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+              <a href="https://github.com/Amrit-Lamsal" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+              <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=amritlamsal400@gmail.com" class="fas fa-envelope" rel="noopener noreferrer" target="_blank">
+              <a href="https://twitter.com/Amritlamsal400" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
+              <a href="https://t.me/amritlamsal" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a>
+          </div>
+      </div>
+  </div>
+  <h1 class="credit">Designed with <i class="fa fa-heart pulse repeat animated rubberBand"></i> by <a href="https://www.lamsalamrit.com.np/"> Amrit Lamsal</a></h1>
+
+</section>
+<!-- footer section ends -->
+
+<!-- scroll top btn -->
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- scroll back to top -->
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- typed.js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<!-- vanilla tilt.js links -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- scroll reveal anim -->
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- Mail -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('jOoMjm3DvnAzYNqef')
+</script>
+<!-- Sweet Alert -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<!-- crousel js file link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js" integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+<script src="./assets/js/script.js"></script>
+
+</body>
+</html>
