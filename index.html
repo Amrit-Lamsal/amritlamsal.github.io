@@ -719,9 +719,7 @@
 
 <!-- contact section starts -->
 <section class="contact" id="contact">
-  
   <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
-
   <div class="container">
     <div class="content">
       <div class="image-box">
@@ -739,9 +737,10 @@
           <i class='fas fa-envelope'></i>
         </div>
         <div class="field">
-          <input type="value" id="phone" name="phone" placeholder="Phone">
+          <input type="value" id="phone" name="phone" placeholder="Phone"/><br>
           <i class='fas fa-phone-alt'></i>
         </div>
+        <div id="phone_error" class="error hidden">Please enter a valid phone number</div>
         <div class="message">
         <textarea placeholder="Message" id="message" name="message" required></textarea>
         <i class="fas fa-comment-dots"></i>
