@@ -38,19 +38,58 @@ $(document).ready(function () {
   });
 
  // <!-- emailjs to mail contact form data -->
-
- document.getElementById('contact-form').addEventListener('submit', function (event) {
-  event.preventDefault();
-    emailjs.sendForm('default_service', 'template_1uzq9lw', this)
-        .then(function (response) {
-            console.log('SUCCESS!', response.status, response.text);
-            swal("Successful", "Form Submitted Successfully", "success");
-            document.getElementById("contact-form").reset();
-        }, function (error) {
-            console.log('FAILED...', error);
-            swal("Something Wrong", "Form Submission Failed! Try Again", "error");
-        });
+// Attach an input event listener to the phone field to validate and provide real-time feedback
+document.getElementById('phone').addEventListener('input', function () {
+  var phone = this.value;
+  var phoneError = document.getElementById('phone_error');
+  
+  if (validatePhoneNumber(phone)) {
+    phoneError.classList.add('hidden');
+    this.style.borderColor = 'green';
+  } else {
+    phoneError.classList.remove('hidden');
+    this.style.borderColor = 'red';
+  }
 });
+
+document.getElementById('contact-form').addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  var phone = document.getElementById('phone').value;
+  
+  if (validatePhoneNumber(phone)) {
+    // Phone number is valid, proceed to send the email
+    emailjs.sendForm('default_service', 'template_1uzq9lw', this)
+      .then(function (response) {
+        console.log('SUCCESS!', response.status, response.text);
+        swal("Successful", "Form Submitted Successfully", "success");
+        document.getElementById("contact-form").reset();
+        // Reset the phone input style and error message after successful submission
+        document.getElementById('phone').style.borderColor = '';
+        document.getElementById('phone_error').classList.add('hidden');
+      })
+      .catch(function (error) {
+        console.log('FAILED...', error);
+        swal("Something Wrong", "Form Submission Failed! Try Again", "error");
+      });
+  } else {
+    // Display a validation error message
+    document.getElementById('phone_error').classList.remove('hidden');
+  }
+});
+
+// Form validations
+
+function validatePhoneNumber(input_str) {
+  if (input_str.trim() === '') {
+    return true;
+  }
+
+  // Ensure the number starts with 97 or 98 and is exactly 10 digits long
+  var re = /^(97|98)\d{8}$/;
+  return re.test(input_str) && input_str.replace(/[^\d]/g, '').length <= 10;
+}
+
 
  // <!-- emailjs to mail contact form data -->
 
@@ -67,6 +106,8 @@ document.addEventListener('visibilitychange',
             $("#favicon").attr("href", "assets/images/favhand.png");
         }
     });
+
+
 
 
 // <!-- typed js effect starts -->
@@ -243,15 +284,15 @@ new Glide($testimonialCarousel, {
 
 // <!--Start of Tawk.to Script-->
 
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/650567cc0f2b18434fd8d5fb/1haehqueh';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
+// var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+// (function(){
+// var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+// s1.async=true;
+// s1.src='https://embed.tawk.to/650567cc0f2b18434fd8d5fb/1haehqueh';
+// s1.charset='UTF-8';
+// s1.setAttribute('crossorigin','*');
+// s0.parentNode.insertBefore(s1,s0);
+// })();
 
 // <!--End of Tawk.to Script-->
 
