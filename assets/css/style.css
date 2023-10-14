@@ -1485,6 +1485,19 @@ form .button-area {
 .button-area button:hover i {
   left: 8px;
 }
+.error {
+  color: red;
+  font-size: 90%;
+  display: flex;
+  margin-left: 15px;
+}
+.hidden
+{
+  display:none;
+}
+
+
+
 /* contact section media queries starts */
 @media (max-width: 900px) {
   .contact {
