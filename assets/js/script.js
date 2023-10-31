@@ -62,7 +62,7 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
     emailjs.sendForm('default_service', 'template_1uzq9lw', this)
       .then(function (response) {
         console.log('SUCCESS!', response.status, response.text);
-        swal("Successful", "Form Submitted Successfully", "success");
+        swal("Email Sent", "Thank you for your message. It has been sent.", "success");
         document.getElementById("contact-form").reset();
         // Reset the phone input style and error message after successful submission
         document.getElementById('phone').style.borderColor = '';
@@ -70,7 +70,7 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
       })
       .catch(function (error) {
         console.log('FAILED...', error);
-        swal("Something Wrong", "Form Submission Failed! Try Again", "error");
+        swal("Something Wrong", "Email is not Sent! Try Again", "error");
       });
   } else {
     // Display a validation error message
