@@ -262,12 +262,12 @@ srtop.reveal('.skills .container .skill-accordion', { delay: 400 });
 srtop.reveal('.education .box', { interval: 200 });
 
 /* SCROLL ESERVICE */
-sr.reveal('.section-title', { delay: 200 });
-sr.reveal('.service-card', { delay: 300, interval: 200 });
-sr.reveal('.card-icon', { delay: 200 });
-sr.reveal('.card-title', { delay: 200 });
-sr.reveal('.card-button', { delay: 200 });
-sr.reveal('.service-modal', { delay: 300 });
+srtop.reveal('.section-title', { delay: 200 });
+srtop.reveal('.service-card', { delay: 300, interval: 200 });
+srtop.reveal('.card-icon', { delay: 200 });
+srtop.reveal('.card-title', { delay: 200 });
+srtop.reveal('.card-button', { delay: 200 });
+srtop.reveal('.service-modal', { delay: 300 });
 
 
 
