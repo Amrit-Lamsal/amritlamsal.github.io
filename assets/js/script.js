@@ -224,6 +224,34 @@ s0.parentNode.insertBefore(s1,s0);
 // <!--End of Tawk.to Script-->
 
 
+// BLOG
+
+// Initialize Swiper
+var swiper = new Swiper('.blog-slider', {
+  spaceBetween: 30,
+  effect: 'fade',
+  loop: true,
+  mousewheel: {
+    invert: false,
+  },
+  // autoHeight: true,
+  pagination: {
+    el: '.blog-slider__pagination',
+    clickable: true,
+  }
+});
+
+// Reveal effect for the blog slider
+ScrollReveal().reveal('.blog-slider', {
+  delay: 200,
+  origin: 'bottom',
+  distance: '20px',
+  duration: 1000,
+  reset: true
+});
+// END BLOG
+
+
 /* ===== SCROLL REVEAL ANIMATION ===== */
 const srtop = ScrollReveal({
     origin: 'top',
@@ -282,6 +310,12 @@ srtop.reveal('.portfolio .container .glide', { interval: 400 });
 srtop.reveal('.testimonial .section-title', { delay: 400 });
 srtop.reveal('.testimonial .container', { delay: 400 });
 srtop.reveal('.testimonial .glide', { interval: 400 });
+
+
+/* SCROLL BLOG*/
+// srtop.reveal('.blog-slider__img', { delay: 400 });
+
+
 
 /* SCROLL CONTACT */
 srtop.reveal('.contact .container', { delay: 400 });
