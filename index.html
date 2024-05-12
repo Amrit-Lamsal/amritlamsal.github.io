@@ -15,7 +15,10 @@
     <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
    <!-- carousel Glide JS -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css" integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
+
+
+
    <title>Portfolio | Amrit</title>
 </head>
 <body oncontextmenu="return false">
@@ -32,6 +35,8 @@
             <li><a href="#education">Education</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonial">Testimonial</a></li>
+            <li><a href="#blog">blog</a></li>
             <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -43,24 +48,7 @@
  <section class="home" id="home">
 
    <canvas id="canvas"></canvas>
-   <!-- <div class="icons">
-      <div class="home__social-container">
-        <div class="home__social">
-          <a href="https://github.com/Amrit-Lamsal" class="home__social-icon" target="_blank">
-            <i class="fab fa-github-alt"></i>
-          </a>
-          <a href="https://www.facebook.com/4mrit.lamsal" class="home__social-icon" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/amrit-lamsal-b112ab162/" class="home__social-icon" target="_blank">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://twitter.com/Amritlamsal400" class="home__social-icon" target="_blank">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </div>
-      </div>
-      </div> -->
+  
    <div class="content">
    <h2>Hi There,<br/> I'm Amrit <span>Lamsal</span></h2>
    <p>i am into <span class="typing-text"></span></p><br>
@@ -588,7 +576,7 @@
 <!-- experience section ends -->
 
 <!-- Testimonial -->
-<section class="section testimonial">
+<section id= "testimonial" class="section testimonial ">
   <div class="section-title">
     <h2 class="heading"><i class="fas fa-check-circle"></i> <span>Testimonial</span>
 
@@ -717,6 +705,71 @@
 </section>
 <!-- Testimonial -->
 
+<!-- Blog -->
+
+<section id="blog" class="section testimonial">
+   <div class="section-title">
+     <h2 class="heading"><i class="fas fa-book-open"></i> <span>Blog</span>
+ 
+     </i></h2>
+      <span class="subtitle">Words that matter</span>
+   </div>
+  
+   <div class="blog-slider">
+      <div class="blog-slider__wrp swiper-wrapper">
+        <div class="blog-slider__item swiper-slide">
+          <div class="blog-slider__img">
+            
+            <img src="./assets/images/article/art1.png" alt="">
+          </div>
+          <div class="blog-slider__content">
+            <span class="blog-slider__code">8 may 2024</span>
+            <div class="blog-slider__title">नेपालमा बस्नुको अनौठो वास्तविकता</div>
+            <div class="blog-slider__text">नेपालमा बस्न रोज्नु भनेको पुरानो शिक्षा, न्यूनतम तलब र आधारभूत आवश्यकताहरू पूरा गर्न निरन्तर 
+               लडाइँको वास्तविकतासँग जोडिएको सपना हो। रमणीय दृश्यहरूको पछाडि अप्रयुक्त सम्भावनाको कथा लुकेको छ, 
+               जहाँ दैनिक संघर्षले आकांक्षाहरूमा छाया पार्छ। </div>
+            <a href="./Articles/Article1.html" class="blog-slider__button">READ MORE</a>
+          </div>
+        </div>
+        <div class="blog-slider__item swiper-slide">
+          <div class="blog-slider__img">
+            <img src="./assets/images/article/art2.png" alt="">
+          </div>
+          <div class="blog-slider__content">
+            <span class="blog-slider__code">8 may 2024</span>
+            <div class="blog-slider__title">नेपाली सरकारी कार्यालयहरूको अशुरक्षित इमेल अभ्यास |</div>
+            <div class="blog-slider__text">डिजिटल गभर्नेन्स तर्फ नेपालको अभियानले डिजिटल ग्यापलाई कम गर्ने, सेवाको पहुँच बढाउने र
+               जवाफदेही सरकारी ढाँचाहरूलाई बढावा दिने आफ्नो प्रतिबद्धतालाई जोड दिन्छ। यसले चौथो औद्योगिक क्रान्तिका
+               चुनौतीहरूलाई नेभिगेट गर्ने क्रममा, नेपालले भविष्यको ई-गभर्नेन्स परिदृश्यतर्फको आशाजनक बाटोको चार्ट
+               बनाउँछ।</div>
+            <a href="./Articles/Article2.html" class="blog-slider__button">READ MORE</a>
+          </div>
+        </div>
+        
+        <div class="blog-slider__item swiper-slide">
+          <div class="blog-slider__img">
+            <img src="./assets/images/article/art3.jpeg" alt="">
+          </div>
+          <div class="blog-slider__content">
+            <span class="blog-slider__code">8 may 2024</span>
+            <div class="blog-slider__title">नेपाली कार्यालयहरूको डिजिटलाइजेशन</div>
+            <div class="blog-slider__text">डिजिटल गभर्नेन्स तर्फ नेपालको अभियानले डिजिटल ग्यापलाई कम गर्ने, सेवाको पहुँच बढाउने र
+               जवाफदेही सरकारी ढाँचाहरूलाई बढावा दिने आफ्नो प्रतिबद्धतालाई जोड दिन्छ। यसले चौथो औद्योगिक क्रान्तिका
+               चुनौतीहरूलाई नेभिगेट गर्ने क्रममा, नेपालले भविष्यको ई-गभर्नेन्स परिदृश्यतर्फको आशाजनक बाटोको चार्ट
+               बनाउँछ।</div>
+            <a href="./Articles/Article3.html" class="blog-slider__button">READ MORE</a>
+          </div>
+        </div>
+        
+      </div>
+      <div class="blog-slider__pagination"></div>
+    </div>
+
+ </section>
+<!-- Blog -->
+
+
+
 <!-- contact section starts -->
 <section class="contact" id="contact">
   <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
@@ -774,7 +827,7 @@
       </div>
       <div class="box">
           <h3>contact info</h3>
-          <p> <i class="fas fa-phone"></i>+91 XXX-XXX-XXXX</p>
+          <p> <i class="fas fa-phone"></i>+977 9807598856</p>
           <p> <i class="fas fa-envelope"></i>amritlamsal400@gmail.com</p>
           <p> <i class="fas fa-map-marked-alt"></i>Tilottama-07, Rupandehi Nepal</p>
           <div class="share">
@@ -805,6 +858,8 @@
 
 <!-- vanilla tilt.js links -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Swiper for Blog -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
 
 <!-- scroll reveal anim -->
 
