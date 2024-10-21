@@ -1,3 +1,132 @@
+// Basic code protection
+(function() {
+    // Obfuscate the timing
+    const _0x2491 = [
+        'addEventListener', 'DOMContentLoaded', 'keydown', 'preventDefault',
+        'ctrlKey', 'shiftKey', 'keyCode', 'charCodeAt'
+    ];
+
+    // Core protection against developer tools
+    const protectCode = () => {
+        // Disable right-click
+        document[_0x2491[0]]('contextmenu', (e) => e[_0x2491[3]]());
+
+        // Protect against keyboard shortcuts
+        document[_0x2491[0]](_0x2491[2], (e) => {
+            // Block F12
+            if (e.keyCode === 123) return false;
+            
+            // Block Ctrl+Shift+I/C/J
+            if (e[_0x2491[4]] && e[_0x2491[5]] && 
+                (e[_0x2491[6]] === 'I'[_0x2491[7]](0) || 
+                 e[_0x2491[6]] === 'C'[_0x2491[7]](0) || 
+                 e[_0x2491[6]] === 'J'[_0x2491[7]](0))) {
+                return false;
+            }
+            
+            // Block Ctrl+U
+            if (e[_0x2491[4]] && e[_0x2491[6]] === 'U'[_0x2491[7]](0)) {
+                return false;
+            }
+        });
+
+        // Advanced DevTools detection
+        let devToolsCheck = {
+            isOpen: false,
+            orientation: undefined
+        };
+
+        const emitOnDevToolsState = (isOpen) => {
+            if (isOpen) {
+                document.documentElement.innerHTML = '';
+                document.documentElement.innerHTML = 'Access Denied';
+                throw new Error('Security violation detected');
+            }
+        };
+
+        // Size-based detection
+        const checkWindowSize = () => {
+            const threshold = 160;
+            const widthThreshold = window.outerWidth - window.innerWidth > threshold;
+            const heightThreshold = window.outerHeight - window.innerHeight > threshold;
+            const orientation = widthThreshold ? 'vertical' : 'horizontal';
+
+            if (!(heightThreshold && widthThreshold) && 
+                ((window.Firebug && window.Firebug.chrome && window.Firebug.chrome.isInitialized) || 
+                widthThreshold || heightThreshold)) {
+                if (!devToolsCheck.isOpen || devToolsCheck.orientation !== orientation) {
+                    emitOnDevToolsState(true);
+                }
+                devToolsCheck.isOpen = true;
+                devToolsCheck.orientation = orientation;
+            } else {
+                if (devToolsCheck.isOpen) {
+                    emitOnDevToolsState(false);
+                }
+                devToolsCheck.isOpen = false;
+                devToolsCheck.orientation = undefined;
+            }
+        };
+
+        // Continuous monitoring
+        setInterval(checkWindowSize, 1000);
+        window[_0x2491[0]]('resize', checkWindowSize);
+        window[_0x2491[0]]('load', checkWindowSize);
+
+        // Debug protection
+        const debug = () => {
+            debugger;
+            debug();
+        };
+        debug();
+    };
+
+    // Initialize protection on load
+    document[_0x2491[0]](_0x2491[1], protectCode);
+
+    // Additional layer of protection using error trapping
+    window.onerror = function(msg, url, line, col, error) {
+        // Handle security-related errors silently
+        return true;
+    };
+
+    // Prevent source code viewing
+    document.onkeypress = function(event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) return false;
+    };
+    
+    document.onmousedown = function(event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) return false;
+    };
+    
+    document.onkeydown = function(event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) return false;
+    };
+
+    // Disable console methods
+    const disableConsole = () => {
+        Object.defineProperty(window, 'console', {
+            get: function() {
+                return {
+                    log: function() {},
+                    debug: function() {},
+                    info: function() {},
+                    warn: function() {},
+                    error: function() {}
+                };
+            }
+        });
+    };
+    
+    disableConsole();
+})();
+
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     // DOM Elements
     const sampleTextElement = document.getElementById('sample-text');
@@ -273,38 +402,3 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// Disable Right-click
-        document.addEventListener('contextmenu', function(e) {
-            e.preventDefault();
-        });
-
-        // Disable F12, Ctrl+Shift+I, Ctrl+Shift+C, Ctrl+Shift+J, Ctrl+U
-        document.onkeydown = function(e) {
-            if (e.keyCode == 123) { // F12
-                return false;
-            }
-            if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'J'.charCodeAt(0))) {
-                return false;
-            }
-            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { // Ctrl+U
-                return false;
-            }
-        };
-
-        // Block Developer Tools by monitoring its use (not reliable)
-        (function() {
-            var devtools = function() {};
-            devtools.toString = function() {
-                return 'DevTools opened';
-            };
-            console.log('%c', devtools);
-        })();
-
-        // Extra precaution (not effective in all cases)
-        window.addEventListener('blur', () => {
-            setTimeout(() => {
-                if (window.outerHeight - window.innerHeight > 100) {
-                    document.body.innerHTML = 'Developer tools are not allowed';
-                }
-            }, 100);
-        });
