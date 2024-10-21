@@ -271,3 +271,40 @@ document.addEventListener('DOMContentLoaded', function () {
         pauseTimer();
     });
 });
+
+
+// Disable Right-click
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // Disable F12, Ctrl+Shift+I, Ctrl+Shift+C, Ctrl+Shift+J, Ctrl+U
+        document.onkeydown = function(e) {
+            if (e.keyCode == 123) { // F12
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && (e.keyCode == 'I'.charCodeAt(0) || e.keyCode == 'C'.charCodeAt(0) || e.keyCode == 'J'.charCodeAt(0))) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { // Ctrl+U
+                return false;
+            }
+        };
+
+        // Block Developer Tools by monitoring its use (not reliable)
+        (function() {
+            var devtools = function() {};
+            devtools.toString = function() {
+                return 'DevTools opened';
+            };
+            console.log('%c', devtools);
+        })();
+
+        // Extra precaution (not effective in all cases)
+        window.addEventListener('blur', () => {
+            setTimeout(() => {
+                if (window.outerHeight - window.innerHeight > 100) {
+                    document.body.innerHTML = 'Developer tools are not allowed';
+                }
+            }, 100);
+        });
